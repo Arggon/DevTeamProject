@@ -1,0 +1,48 @@
+body {
+	background-color: #f7ffff;
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
+section {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	background-color:  rgba(18, 101, 255, 0.897);
+	padding: 20px 0;
+	margin: 0px 8px 40px 8px ;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+.claseBoton{
+	padding: 10px;
+	margin: 10px;
+	color: #000000;
+	background-color: #FFF;
+	border-bottom: 1px solid #9799A6;
+	border-radius: 10%;
+}
+
+main {
+	background-color:  rgba(252, 233, 220, 0.897);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 30px;
+}
+
+table, td {
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    padding: 5px;
+  }

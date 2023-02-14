@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proyecto Inventario</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+	<header>
+		<section id="idSeccionEncabezado">
+			<h1>Smart Storage</h1>
+			<input type="button" class="claseBoton" id="idBotonProductos" value="Productos">
+			<input type="button" class="claseBoton" id="idBotonVenta" value="Venta">
+			<input type="button" class="claseBoton" id="idBotonContabilidad" value="Contabilidad">
+	</section>
+	</header>
+	<main>
+		<section id="idSeccionProductos">
+			<h2>Productos</h2>
+			<input type="button" class="claseBoton" id="idBotonNuevoProducto" value="Nuevo Producto">
+			<table>
+				<tr class="claseDato">
+					<td>Codigo</td>
+					<td>Descripcion</td>
+					<td>Precio de Compra</td>
+					<td>Precio de Venta</td>
+					<td>Existencia</td>
+					<td>Editar</td>
+					<td>Eliminar</td>
+					<input type="button" class="claseBoton" id="idBotonEditarColumna" value="Editar Columna">
+				</tr>
+				<tr class="claseValor">
+					<td>Valor 1</td>
+					<td>Valor 2</td>
+				</tr>
+			</table>
+		</section>
+		<section id="idSeccionVenta">
+			<h2>Venta</h2>
+			<input type="button" class="claseBoton" id="idBotonSeleccionarProducto" value="Seleccionar Producto">
+			<table>
+				<tr class="claseDato">
+					<td>Codigo</td>
+					<td>Descripcion</td>
+					<td>Precio de Compra</td>
+					<td>Precio de Venta</td>
+					<td>Existencia</td>
+				</tr>
+				<tr class="claseValor">
+					<td>Valor 1</td>
+					<td>Valor 2</td>
+				</tr>
+			</table>
+		</section>
+		<section id="idSeccionContabilidad">
+			<h2>Contabilidad</h2>
+			<p>Inserte Grafica Piola</p>
+		</section>
+	</main>
+	<footer>
+	</footer>
+	<script src="inventario.js"></script>
+</body>
+</html>
