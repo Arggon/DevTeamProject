@@ -12,9 +12,26 @@ const botonNuevoProducto = document.getElementById('idBotonNuevoProducto')
 const botonEditarColumna = document.getElementById('idBotonEditarColumna')
 const botonSeleccionarProducto = document.getElementById('idBotonSeleccionarProducto')
 
+const tablaProductos = document.getElementById('idTablaProductos')
 
+let tabla
+let productos = []
 
+class Producto {
+    constructor(codigo,descripcion,precioCompra,precioVenta,existencia){
+        this.codigo= codigo
+        this.descripcion= descripcion
+        this.precioCompra= precioCompra
+        this.precioVenta= precioVenta
+        this.existencia= existencia
+    }
+}
 
+let ejemplo1 = new Producto (1,'producto1','5','10',4)
+let ejemplo2 = new Producto (2,'producto2','15','20',6)
+
+productos.push(ejemplo1,ejemplo2)
+console.log(productos)
 
 function iniciarPagina() {
     seccionProductos.style.display='none'
@@ -27,6 +44,17 @@ function iniciarPagina() {
     botonNuevoProducto.addEventListener('click', ingresarNuevoProducto)
     botonEditarColumna.addEventListener('click', editarColumna)
     botonSeleccionarProducto.addEventListener('click', seleccionarProducto)
+
+    productos.forEach((Producto) => {
+        tabla= `<td>${Producto.codigo} </td>
+                <td>${Producto.descripcion}</td>
+                <td>${Producto.precioCompra}</td>
+                <td>${Producto.precioVenta}</td>
+                <td>${Producto.existencia}</td>
+                <input type="button" class="claseBotoncito" id="idBotoncitoEditar" value="Editar">
+                <input type="button" class="claseBotoncito" id="idBotoncitoEliminar" value="Eliminar">`
+        tablaProductos.innerHTML += tabla
+    })
 }
 
 function mostrarProductos() {
