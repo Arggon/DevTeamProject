@@ -30,7 +30,7 @@ h2 {
 	padding: 10px;
 	margin: 10px;
 	color: #000000;
-	background-color: #FFF;
+	background-color: #fff7f7;
 	border-bottom: 1px solid #9799A6;
 	border-radius: 10%;
 }
@@ -45,4 +45,17 @@ main {
 table, td {
     border: 1px solid rgba(0, 0, 0, 0.199);
     padding: 5px;
-  }
+}
+
+#idBotonEditarColumna{
+	align-self: end;
+}
+
+img{
+	width: 25px;
+	height: 25px;
+}
+
+#idBotonSeleccionarProducto{
+	width: 150px;
+}

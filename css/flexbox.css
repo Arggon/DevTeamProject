@@ -1,0 +1,26 @@
+#idSeccionProductos{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#idSeccionVenta{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#idSeccionContabilidad{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.claseBoton{
+    width: 120px;
+}
+
+.claseBotoncito{
+    align-self: flex-end;
+}
+

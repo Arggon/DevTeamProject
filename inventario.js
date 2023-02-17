@@ -51,8 +51,14 @@ function iniciarPagina() {
                 <td>${Producto.precioCompra}</td>
                 <td>${Producto.precioVenta}</td>
                 <td>${Producto.existencia}</td>
-                <input type="button" class="claseBotoncito" id="idBotoncitoEditar" value="Editar">
-                <input type="button" class="claseBotoncito" id="idBotoncitoEliminar" value="Eliminar">`
+                <td><button class="claseBotoncito" id="idBotoncitoEditar">
+                    <img src="/Proyecto/inventario/remote/DevTeamProject/img/edit-icon.jpg">
+                    </button>
+                </td>
+                <td><button class="claseBotoncito" id="idBotoncitoEliminar">
+                    <img src="/Proyecto/inventario/remote/DevTeamProject/img/delete-icon.jpg">
+                    </button>
+                </td>`
         tablaProductos.innerHTML += tabla
     })
 }
