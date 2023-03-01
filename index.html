@@ -4,25 +4,29 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Proyecto Inventario</title>
-	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/flexbox.css">
+	
 </head>
 <body>
 	<header>
 		<section id="idSeccionEncabezado">
 			<h1>Smart Storage</h1>
-			<input type="button" class="claseBoton" id="idBotonProductos" value="Productos">
-			<input type="button" class="claseBoton" id="idBotonVenta" value="Venta">
-			<input type="button" class="claseBoton" id="idBotonContabilidad" value="Contabilidad">
+			<nav>
+				<button type="button" class="btn btn-primary btn-lg" id="idBotonProductos">Productos</button>
+				<input type="button" class="btn btn-primary btn-lg" id="idBotonVenta" value="Venta">
+				<input type="button" class="btn btn-primary btn-lg" id="idBotonContabilidad" value="Contabilidad">
+			</nav>
 	</section>
 	</header>
 	<main>
 		<section id="idSeccionProductos">
 			<h2>Productos</h2>
-			<input type="button" class="claseBoton" id="idBotonNuevoProducto" value="Nuevo Producto">
-			<table id="idTablaProductos">
-				<tr class="claseDato">
+			<input type="button" class="btn btn-success" id="idBotonNuevoProducto" value="Nuevo Producto">
+			<table class= "table table-striped" >
+				<tbody id="idTablaProductos"><tr class="claseDato">
 					<td>Codigo</td>
 					<td>Descripcion</td>
 					<td>Precio de Compra</td>
@@ -30,14 +34,14 @@
 					<td>Existencia</td>
 					<td>Editar</td>
 					<td>Eliminar</td>
-					<input type="button" class="claseBotoncito" id="idBotonEditarColumna" value="Editar Columna">
-				</tr>
+					
+				</tr></tbody>
 			</table>
 		</section>
 		<section id="idSeccionVenta">
 			<h2>Venta</h2>
-			<input type="button" class="claseBoton" id="idBotonSeleccionarProducto" value="Seleccionar Producto">
-			<table>
+			<input type="button" class="btn btn-success" id="idBotonSeleccionarProducto" value="Seleccionar Producto">
+			<table class= "table">
 				<tr class="claseDato">
 					<td>Codigo</td>
 					<td>Descripcion</td>
@@ -45,6 +49,7 @@
 					<td>Precio de Venta</td>
 					<td>Existencia</td>
 				</tr>
+				
 			</table>
 		</section>
 		<section id="idSeccionContabilidad">

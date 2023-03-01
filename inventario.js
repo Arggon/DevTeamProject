@@ -9,7 +9,7 @@ const botonProductos = document.getElementById('idBotonProductos')
 const botonVenta = document.getElementById('idBotonVenta')
 const botonContabilidad = document.getElementById('idBotonContabilidad')
 const botonNuevoProducto = document.getElementById('idBotonNuevoProducto')
-const botonEditarColumna = document.getElementById('idBotonEditarColumna')
+
 const botonSeleccionarProducto = document.getElementById('idBotonSeleccionarProducto')
 
 const tablaProductos = document.getElementById('idTablaProductos')
@@ -33,7 +33,7 @@ let ejemplo2 = new Producto (2,'producto2','15','20',6)
 productos.push(ejemplo1,ejemplo2)
 console.log(productos)
 
-function iniciarPagina() {
+async function iniciarPagina() {
     seccionProductos.style.display='none'
     seccionVenta.style.display='none'
     seccionContabilidad.style.display='none'
@@ -42,7 +42,6 @@ function iniciarPagina() {
     botonVenta.addEventListener('click', mostrarVentas)
     botonContabilidad.addEventListener('click', mostrarContabilidad)
     botonNuevoProducto.addEventListener('click', ingresarNuevoProducto)
-    botonEditarColumna.addEventListener('click', editarColumna)
     botonSeleccionarProducto.addEventListener('click', seleccionarProducto)
 
     productos.forEach((Producto) => {
@@ -51,12 +50,12 @@ function iniciarPagina() {
                 <td>${Producto.precioCompra}</td>
                 <td>${Producto.precioVenta}</td>
                 <td>${Producto.existencia}</td>
-                <td><button class="claseBotoncito" id="idBotoncitoEditar">
-                    <img src="/Proyecto/inventario/remote/DevTeamProject/img/edit-icon.jpg">
+                <td><button class="claseBotoncitoEdit" id="idBotoncitoEditar">
+                    <img src="./img/edit-icon.jpg">
                     </button>
                 </td>
-                <td><button class="claseBotoncito" id="idBotoncitoEliminar">
-                    <img src="/Proyecto/inventario/remote/DevTeamProject/img/delete-icon.jpg">
+                <td><button class="claseBotoncitoDelete" id="idBotoncitoEliminar">
+                    <img src="./img/delete-icon.jpg">
                     </button>
                 </td>`
         tablaProductos.innerHTML += tabla
